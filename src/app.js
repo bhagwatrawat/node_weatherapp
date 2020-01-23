@@ -1,6 +1,6 @@
 const express=require('express')
 const geoCoding=require('./geocoding.js')
-const Forecast=require('./Forecast.js')
+const Forecast=require('./forecast.js')
 const path=require('path')
 const hbs=require('hbs')
 const app=express()
