@@ -4,6 +4,8 @@ const Forecast=require('./Forecast.js')
 const path=require('path')
 const hbs=require('hbs')
 const app=express()
+
+const port=process.env.PORT || 3000
 const viewsPath=path.join(__dirname,'../TEMPLATES/views')
 const partialPath=path.join(__dirname,'../TEMPLATES/partials')
 app.use(express.static(path.join(__dirname,'../public')))
@@ -62,4 +64,4 @@ error:'info not available'
 })
 })
 
-app.listen(3000)
+app.listen(port)
