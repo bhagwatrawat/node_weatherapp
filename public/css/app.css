@@ -36,6 +36,7 @@ Nav a {
 
 input {
     border: 1px solid #cccccc;
+    border-radius:4px;
     padding: 8px;
 }
 
@@ -59,11 +60,15 @@ padding:50px;
 }
 
 button {
-width:4em;
-height:4em;
+width:60px;
+height:40px;
 }
 input {
-size:40%;
+width:40%;
 height:4em;
+
 }
+input,
+input::-webkit-input-placeholder {
+    font-size: 4em;}
        }
