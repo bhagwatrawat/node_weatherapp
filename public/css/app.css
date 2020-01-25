@@ -65,10 +65,10 @@ height:40px;
 }
 input {
 width:40%;
-height:4em;
+height:40px;
 
 }
 input,
 input::-webkit-input-placeholder {
-    font-size: 4em;}
+    font-size: 40px;}
        }
