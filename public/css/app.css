@@ -1,0 +1,53 @@
+body {
+    background-color: #FCFAE1;
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+@media screen and (max-device-width:480px){
+      body{
+       font-size:3em;
+       }}
+.main-content {
+    flex-grow: 1;
+}
+Nav {
+    margin-top: 40px;
+    margin-bottom: 48px;
+
+}
+
+Nav h1 {
+    border-bottom-solid;
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+Nav a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+#About {
+padding:120px;
+}

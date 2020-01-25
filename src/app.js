@@ -37,12 +37,19 @@ app.get('/weather',(req,res)=>{
 if(!req.query.address){
 return res.send('Entry the address query')
 }
-geoCoding(req.query.address,(data)=>{
-Forecast(data,(info)=>{
+geoCoding(req.query.address,(error,data)=>{
+if(error){
+return res.send({error})
+}
+Forecast(data,(error,info)=>{
+if (error){
+return res.send({error})
+}
 res.send({
-temperature:info.temperature,
+temperature:'The current temperature is '+info.temperature+' C .The weather is '+info.summary+' with '+info.precipProbability+' % of raining',
 place:info.place,
-rainingprobability:info.precipProbability
+temperatureHigh:'MAX temperature '+info.temperatureHigh+' C',
+temperatureLow:'MIN temperature '+info.temperatureLow+' C'
 })
 })
 })
