@@ -10,23 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh
 }
- @media screen and (max-device-width:480px){
-      body{
-       font-size:4.5em;
-       }
-       #About {
-padding:70px;
-}
 
-button {
-width:4em;
-height:4em;
-}
-input {
-size:40%;
-height:4em;
-}
-       }
 
 
 .main-content {
@@ -66,3 +50,20 @@ button {
 #About {
 padding:120px;
 }
+@media screen and (max-device-width:480px){
+      body{
+       font-size:4.5em;
+       }
+       #About {
+padding:50px;
+}
+
+button {
+width:4em;
+height:4em;
+}
+input {
+size:40%;
+height:4em;
+}
+       }
